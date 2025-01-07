@@ -134,22 +134,24 @@ export default function Home() {
 
   
   return (
-    <div className="min-h-screen bg-[#0A0B0F] text-white">
+    <div className="min-h-screen bg-[#0A0B0F] text-white relative ">
+      <div className="w-screen h-screen bg-[url('https://img.freepik.com/premium-photo/purple-pink-abstract-background-with-purple-pink-graphic-that-says-pink_605423-83265.jpg')] bg-cover fixed top-0 left-0 z-0"></div>
+      <div className="w-screen h-screen bg-black bg-opacity-60 bg-cover fixed top-0 left-0 z-0"></div>
       <div className='cursor'></div>
       <Toaster />
       {/* Hero Section */}
-      <main className="container mx-auto px-6 pt-16 pb-24 " >
-        <div className="flex flex-col items-center text-center gap-8 max-w-3xl mx-auto cursor-pointer">
+      <main className="container mx-auto pt-16 relative z-10" >
+        <div className="flex flex-col px-6 items-center text-center gap-8 max-w-3xl mx-auto cursor-pointer">
           {/* Logo */}
           <div className=" relative mb-8">
-            <canvas id='canv' className=' h-[400px] mb-[-100px] mt-[-100px] bg-transparent '></canvas>
+            {/* <canvas id='canv' className=' h-[400px] mb-[-100px] mt-[-100px] bg-transparent '></canvas> */}
             <Image
               src="/static/logo.png"
               alt="Alris logo"
               width={120}
               height={120}
               priority
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              // className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
 
@@ -178,9 +180,9 @@ export default function Home() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid sm:grid-cols-3 gap-8 mt-24">
+        <div className="grid sm:grid-cols-3 gap-8 mt-24 bg-[#280632] px-16 pt-16 pb-24">
           {/* Feature 1 */}
-          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-[#B04FB8]/5 border border-[#54F4EC]/20">
+          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-[url('https://c4.wallpaperflare.com/wallpaper/7/827/804/light-web-sky-digital-art-wallpaper-preview.jpg')] border border-[#54F4EC]/20">
             <div className="p-3 rounded-full bg-gradient-to-br from-[#54F4EC]/70 to-[#B04FB8]/70 bg-opacity-20 mb-4">
               <Brain className="w-6 h-6 text-white" />
             </div>
@@ -193,7 +195,7 @@ export default function Home() {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-[#B04FB8]/5 border border-[#B04FB8]/20">
+          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThUC0hEkDc9hdTAcXkOiSU-RgYJRukRAs1tSyePXqXpUEwvWPKsTqO4QXMx9VIb4F72Q&usqp=CAU')] bg-cover border border-[#54F4EC]/20">
           <div className="p-3 rounded-full bg-gradient-to-br from-[#54F4EC]/70 to-[#B04FB8]/70 bg-opacity-20 mb-4">
               <Zap className="w-6 h-6 text-white" />
             </div>
@@ -206,7 +208,7 @@ export default function Home() {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-[#B04FB8]/5 border border-[#B04FB8]/20">
+          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-[url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148877163.jpg')] bg-center border border-[#B04FB8]/20">
           <div className="p-3 rounded-full bg-gradient-to-br from-[#54F4EC]/70 to-[#B04FB8]/70 bg-opacity-20 mb-4">
               <Shield className="w-6 h-6 text-white" />
             </div>
@@ -221,7 +223,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[#B04FB8]/20">
+      <footer className="border-t border-[#B04FB8]/20 bg-[#0A0B0F] relative z-10">
         <div className="container mx-auto px-6 py-8 flex items-center justify-between">
           <p className="text-sm text-blue-100/70">
             © 2024 Alris. All rights reserved.
