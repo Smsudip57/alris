@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "npm install --legacy-peer-deps",
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm install --legacy-peer-deps && npm run build",
     "start": "next start",
     "lint": "next lint"
   },
