@@ -7,7 +7,7 @@ import { Wallet, Settings, BotIcon as Robot } from 'lucide-react';
 import { useState, useEffect } from "react";
 import { StrategyModal } from "@/components/ui/strategy-modal";
 import { DashboardView } from "@/components/ui/dashboard-view";
-import { useWallet } from '@solana/wallet-adapter-react';
+// import { useWallet } from '@solana/wallet-adapter-react';
 import dynamic from 'next/dynamic';
 
 const WalletMultiButtonDynamic = dynamic(
